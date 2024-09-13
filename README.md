@@ -64,7 +64,23 @@ Looking ahead, I aspire to gain expertise in cloud platforms, lead development t
 
 <h3 align="left">GitHub Stats:</h3>
 <hr>
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=robert-koopedi)](https://github.com/robert-koopedi/github-readme-stats)
 
 
 
+
+
+
+
+
+<p>
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=robert-koopedi&show_icons=true&locale=en" alt="robert-koopedi" />
+</p>
+<p>
+  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=robert-koopedi&" alt="robert-koopedi" />
+</p>
+
+<h3 align="left">Top Contributed Repo:</h3>
+<hr>
+<p>
+  <img src="https://github-contributor-stats.vercel.app/api?username=robert-koopedi&limit=5&theme=flat&combine_all_yearly_contributions=true" alt="Top Contributed Repo"/>
+</p>
