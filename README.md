@@ -63,7 +63,8 @@ Looking ahead, I aspire to gain expertise in cloud platforms, lead development t
 </p>
 
 <h3 align="left">GitHub Stats:</h3>
-
+<hr>
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=robert-koopedi)](https://github.com/robert-koopedi/github-readme-stats)
 
 
 
