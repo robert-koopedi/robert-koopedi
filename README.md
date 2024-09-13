@@ -23,13 +23,13 @@ Looking ahead, I aspire to gain expertise in cloud platforms, lead development t
 <h3 align="left">Want to get in touch? you can find me here:</h3>
 <hr>
 <p align="left">
-  <a href="https://linkedin.com/in/adityajaiswal7" target="_blank" rel="noreferrer">
+  <a href="https://www.linkedin.com/in/sehulong-robert-8613781b9/" target="_blank" rel="noreferrer">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="adityajaiswal7" height="30" width="40" />
   </a>
-  <a href="https://instagram.com/devopsshack" target="_blank" rel="noreferrer">
+  <a href="[https://www.facebook.com/share/RSapUNgJRebaEKku/?mibextid=LQQJ4d](https://www.instagram.com/k_double_o_two?igsh=MmltNmU5aHRndzV0&utm_source=qr)" target="_blank" rel="noreferrer">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="devopsshack" height="30" width="40" />
   </a>
-  <a href="https://facebook.com/your-facebook-profile" target="_blank" rel="noreferrer">
+  <a href="https://www.facebook.com/share/RSapUNgJRebaEKku/?mibextid=LQQJ4d" target="_blank" rel="noreferrer">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="Facebook" height="30" width="40" />
   </a>
 </p>
