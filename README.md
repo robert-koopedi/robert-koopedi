@@ -2,7 +2,7 @@
 
 
 <p align="start">
-I’m Robert Sehulong Koopedi, a student passionate about software development with a focus on front-end technologies. I’m currently focusing on HTML, CSS, and JavaScript, and my projects are geared towards building confidence in these areas, I’m eager to deepen my skills in advanced software development, and web accessibility. 
+I’m Robert Sehulong Koopedi, a graduate passionate about software development with a focus on front-end technologies. I’m currently focusing on HTML, CSS,JavaScript and React and my projects are geared towards building confidence in these areas, I’m eager to deepen my skills in advanced software development, and web accessibility. 
   
 My goal is to bridge front-end and back-end development, aiming to become a full-stack developer. I’m driven by values of collaboration, continuous learning, and innovation, thriving in tech startups and e-commerce environments. Currently, I’m working on building a personal project, enhancing my testing skills, and contributing to open-source initiatives.
 
