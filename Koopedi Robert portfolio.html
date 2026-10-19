@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert Koopedi | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Theme Toggle Logic
+      document.addEventListener("DOMContentLoaded", function () {
+        const themeSwitch = document.getElementById("theme-switch");
+        const body = document.body;
+
+        if (localStorage.getItem("theme") === "light") {
+          body.classList.add("light-mode");
+          themeSwitch.checked = true;
+        }
+
+        themeSwitch.addEventListener("change", function () {
+          if (this.checked) {
+            body.classList.add("light-mode");
+            localStorage.setItem("theme", "light");
+          } else {
+            body.classList.remove("light-mode");
+            localStorage.setItem("theme", "dark");
+          }
+        });
+      });
+
+      // Scroll Navigation Highlight
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".navbar ul li");
+
+        let currentSection = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100;
+          if (scrollY >= sectionTop) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          const linkHref = link
+            .querySelector("a")
+            .getAttribute("href")
+            .substring(1);
+          if (linkHref === currentSection) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="#" class="logo">Portfolio.</a>
+      <ul>
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+      </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="main darker-color">
+      <div class="main-info">
+        <h1>Sehulong Robert Koopedi</h1>
+        <!-- <h2>I'm a Software Developer</h2> -->
+        <p>
+          Welcome to my online portfolio! I’m Sehulong Robert Koopedi, a
+          Software Developer based in South Africa, Polokwane. I specialize in
+          building robust and scalable data-driven web applications.
+        </p>
+
+        <div class="btn-sci">
+          <!-- Theme Toggle -->
+          <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" />
+            <label for="theme-switch">🌙</label>
+          </div>
+
+          <!-- Download CV -->
+          <a
+            href="Robert_koopedi_cv.pdf"
+            class="btn"
+            download
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="bx bx-download"></i> Download CV
+          </a>
+
+          <!-- Social Icons -->
+          <div class="sci">
+            <a
+              href="https://github.com/robert-koopedi"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sehulong-robert-8613781b9/"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/share/RSapUNgJRebaEKku/?mibextid=LQQJ4d"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bxl-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img
+              src="profile picture.jpeg"
+              alt="Profile picture of Sehulong Robert Koopedi"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="main">
+      <div class="main-info">
+        <h1>Sehulong Robert Koopedi</h1>
+        <h2>I'm a Software Developer</h2>
+        <p>
+          I’m passionate about front-end technologies including HTML, CSS, and
+          JavaScript. My goal is to bridge front-end and back-end development
+          and become a full-stack developer. I thrive in collaborative
+          environments, love continuous learning, and aim to deliver
+          high-quality software solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <!-- <section id="certificates" class="main darker-color">
+      <div class="main-info">
+        <div class="grid-container">
+          <div class="project">
+            <h3>FNB Wealth & Investment Division (PBT Group)</h3>
+            <p>Dynamic dashboard web application.</p>
+            <p>
+              <strong>Technologies Used:</strong> Java, Spring Boot, AWS, MySQL
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>Aristocrat Online Casino Expansion (Wonderlabz)</h3>
+            <p>
+              <strong>Technologies Used:</strong> Java, Angular, MongoDB, GCP
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- CERTIFICATIONS -->
+    <section id="certificates" class="main darker-color">
+      <div class="main-info certificates-info">
+        <h1>Certifications & Achievements</h1>
+        <p class="section-description">
+          My professional development journey through Cisco Networking Academy,
+          covering Python programming, data science, artificial intelligence,
+          cybersecurity, and the Internet of Things.
+        </p>
+
+        <!-- COURSE CERTIFICATES -->
+        <h2 class="certificate-heading">Course Certificates</h2>
+
+        <div class="grid-container">
+          <div class="project certificate-card">
+            <div class="certificate-icon">
+              <i class="bx bx-bar-chart-alt-2"></i>
+            </div>
+            <h3>Data Science Essentials with Python</h3>
+            <p>
+              Introduction to data science concepts and using Python to explore,
+              process, and understand data.
+            </p>
+            <span class="certificate-date">Issued: Sep 2026</span>
+            <a
+              href="certificates/data-science-essentials-python.pdf"
+              class="certificate-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bx-file-blank"></i> View Certificate
+            </a>
+          </div>
+
+          <div class="project certificate-card">
+            <div class="certificate-icon">
+              <i class="bx bx-brain"></i>
+            </div>
+            <h3>AI Fundamentals: Foundations for Understanding AI</h3>
+            <p>
+              Foundational knowledge of artificial intelligence, its concepts,
+              and potential applications.
+            </p>
+            <span class="certificate-date">Issued: Sep 2026</span>
+            <a
+              href="certificates/ai-fundamentals.pdf"
+              class="certificate-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bx-file-blank"></i> View Certificate
+            </a>
+          </div>
+
+          <div class="project certificate-card">
+            <div class="certificate-icon">
+              <i class="bx bx-shield-quarter"></i>
+            </div>
+            <h3>Industrial Cybersecurity Essentials</h3>
+            <p>
+              Introduction to cybersecurity principles and security
+              considerations in industrial environments.
+            </p>
+            <span class="certificate-date">Issued: Sep 2026</span>
+            <a
+              href="certificates/industrial-cybersecurity.pdf"
+              class="certificate-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bx-file-blank"></i> View Certificate
+            </a>
+          </div>
+
+          <div class="project certificate-card">
+            <div class="certificate-icon">
+              <i class="bx bx-bulb"></i>
+            </div>
+            <h3>Introduction to Modern AI</h3>
+            <p>
+              An introduction to modern AI technologies and their use in today's
+              digital world.
+            </p>
+            <span class="certificate-date">Issued: Sep 2026</span>
+            <a
+              href="certificates/introduction-to-modern-ai.pdf"
+              class="certificate-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bx-file-blank"></i> View Certificate
+            </a>
+          </div>
+
+          <div class="project certificate-card">
+            <div class="certificate-icon">
+              <i class="bx bx-chip"></i>
+            </div>
+            <h3>Introduction to IoT</h3>
+            <p>
+              Fundamentals of the Internet of Things, connected devices, and
+              applications of smart technology.
+            </p>
+            <span class="certificate-date">Issued: Sep 2026</span>
+            <a
+              href="certificates/introduction-to-iot.pdf"
+              class="certificate-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bx-file-blank"></i> View Certificate
+            </a>
+          </div>
+
+          <div class="project certificate-card">
+            <div class="certificate-icon">
+              <i class="bx bx-code-alt"></i>
+            </div>
+            <h3>Python Essentials 1</h3>
+            <p>
+              Python programming fundamentals, including variables, data types,
+              control flow, lists, functions, and exceptions.
+            </p>
+            <span class="certificate-date">Issued: Sep 2026</span>
+            <a
+              href="certificates/python-essentials-1.pdf"
+              class="certificate-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bx-file-blank"></i> View Certificate
+            </a>
+          </div>
+        </div>
+        </section>
+        <!-- </div> -->
+
+        <!-- MODULE ACHIEVEMENTS-->
+    <section id="achievements" class="main darker-color">
+      <div class="main-info certificates-info">
+
+        <h1>Module Achievements</h1>
+
+        <p class="section-description">
+          Additional learning milestones completed as part of my
+          programming and technology courses.
+        </p>
+
+        <div class="achievement-list">
+          <div class="achievement-item">
+            <i class="bx bx-check-circle"></i>
+            <div>
+              <h3>Introduction to Python and Programming</h3>
+              <span>Issued: Sep 2026</span>
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <i class="bx bx-check-circle"></i>
+            <div>
+              <h3>Data Types, Variables, and Basic I/O</h3>
+              <span>Issued: Sep 2026</span>
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <i class="bx bx-check-circle"></i>
+            <div>
+              <h3>Control Flow and Lists</h3>
+              <span>Issued: Sep 2026</span>
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <i class="bx bx-check-circle"></i>
+            <div>
+              <h3>Collections, Functions, and Exceptions</h3>
+              <span>Issued: Sep 2026</span>
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <i class="bx bx-check-circle"></i>
+            <div>
+              <h3>Digital Transformation</h3>
+              <span>Issued: Sep 2026</span>
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <i class="bx bx-check-circle"></i>
+            <div>
+              <h3>Automating Things</h3>
+              <span>Issued: Sep 2026</span>
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <i class="bx bx-check-circle"></i>
+            <div>
+              <h3>Programming Things</h3>
+              <span>Issued: Sep 2026</span>
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <i class="bx bx-check-circle"></i>
+            <div>
+              <h3>Data Insights</h3>
+              <span>Issued: Sep 2026</span>
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <i class="bx bx-check-circle"></i>
+            <div>
+              <h3>Securing Things</h3>
+              <span>Issued: Sep 2026</span>
+            </div>
+          </div>
+
+          <div class="achievement-item">
+            <i class="bx bx-check-circle"></i>
+            <div>
+              <h3>IoT Opportunities</h3>
+              <span>Issued: Sep 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
